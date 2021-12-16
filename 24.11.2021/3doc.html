@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      
+   <style>
+.switcher{
+    padding: 8rem;
+    width: 4.5rem;
+    height: 2rem;
+    display: block;
+    cursor: pointer;
+   
+}
+        
+        .switcher > input{
+            display: none;
+        }
+        .switcher > input + .switcher-bg{
+        width: 100%;
+        height: 100%;
+        background: #050a0caf;
+        border-radius: 100rem;
+        outline-offset: 4px;
+        transition: 0.3s ease;
+       
+        }
+       
+        .switcher > input + .switcher-bg > .switcher-toggler {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    transform: translate(4px, 4px);
+                    background: #f30404;
+                    box-shadow: rgb(0, 0, 0, .5) 3px 2px 3px;
+                     border-radius: 50%;
+                    transition: 0.4s ease; 
+                }
+                .switcher > input:checked + .switcher-bg {
+    background: #050a0caf;
+    outline: 3px colid #050a0caf;
+    outline-offset: 4px
+                }
+                .switcher input:checked + .switcher-bg > .switcher-toggler {
+                    box-shadow: rgb(0, 0, 0, 1)  1px 2px 3px;
+                    background: #20f304;
+                                      transform: translate(calc(2.5rem + 3px), 3px);
+                }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <label class="switcher">
+       
+        <input type="checkbox">
+        
+        <div class="switcher-bg">
+           
+            <div class="switcher-toggler">
+            
+            </div>
+            
+</div>
+    </label> 
+
+</body>
+</html>
